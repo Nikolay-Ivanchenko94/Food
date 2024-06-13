@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rectangle"
+    tools:context=".onboarding.OnboardingScreenFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="248dp"
+            android:id="@+id/ivRectangle1"
+            android:background="@drawable/background_white"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="625dp"
+            android:layout_marginStart="6dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+        <TextView
+            android:layout_width="313dp"
+            android:layout_height="30dp"
+            android:id="@+id/tvText"
+            android:text="Get Started With Food Favorite"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="694dp"
+            android:layout_marginStart="70dp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+        <Button
+            android:layout_width="376dp"
+            android:layout_height="63dp"
+            android:id="@+id/btnSignUp"
+            android:background="@drawable/background"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="746dp"
+            android:layout_marginStart="15dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+
+        <Button
+            android:layout_width="376dp"
+            android:layout_height="63dp"
+            android:id="@+id/btnSignIn"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="819dp"
+            android:layout_marginStart="15dp"
+            android:text="Sign In"
+            android:textColor="@drawable/background"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

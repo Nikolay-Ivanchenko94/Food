@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homescreen.HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <Button
+            android:id="@+id/btnNot"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/notification"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnLocal"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/location"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+
+        <TextView
+            android:layout_width="93dp"
+            android:layout_height="28dp"
+            android:id="@+id/tvHome"
+            android:text="Home"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="59dp"
+            android:layout_marginStart="180dp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+
+        <Button
+            android:id="@+id/btnDown"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="255dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/arrowdown"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/btnLike"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="378dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/like"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+
+        <ImageView
+            android:layout_width="328dp"
+            android:layout_height="52dp"
+            android:id="@+id/ivSearch"
+            android:background="@drawable/background_white_gray"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="114dp"
+            android:layout_marginStart="16dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/search"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+
+        <EditText
+            android:layout_width="198dp"
+            android:layout_height="44dp"
+            android:id="@+id/evText"
+            android:hint="Name our mood"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="70dp"
+            tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
+
+
+        <Button
+            android:id="@+id/btnVoice"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="305dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/voice"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="52dp"
+            android:id="@+id/ivQr"
+            android:background="@drawable/background_white_gray"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="114dp"
+            android:layout_marginStart="354dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/btnQr"
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="373dp"
+            android:layout_marginTop="132dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/qrcode"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+
+        <ImageView
+            android:layout_width="396dp"
+            android:layout_height="225dp"
+            android:id="@+id/ivOffers"
+            android:background="@drawable/frame1"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="174dp"
+            android:layout_marginStart="5dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+
+        <TextView
+            android:layout_width="103dp"
+            android:layout_height="28dp"
+            android:id="@+id/tvCategories"
+            android:text="Categories"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="466dp"
+            android:layout_marginStart="16dp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:id="@+id/ivFood"
+            android:background="@drawable/background_white_gray"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="510dp"
+            android:layout_marginStart="10dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/btnFood"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="530dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/food"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:layout_width="37dp"
+            android:layout_height="18dp"
+            android:id="@+id/tvFood"
+            android:text="Food"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="586dp"
+            android:layout_marginStart="27dp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:id="@+id/ivGroceries"
+            android:background="@drawable/background_white_gray"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="510dp"
+            android:layout_marginStart="88dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/btnGroceries"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="530dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/groceries1"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:layout_width="71dp"
+            android:layout_height="18dp"
+            android:id="@+id/tvGroceries"
+            android:text="Groceries"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="586dp"
+            android:layout_marginStart="88dp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:id="@+id/ivDrink"
+            android:background="@drawable/background_white_gray"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="510dp"
+            android:layout_marginStart="166dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnDrink"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="186dp"
+            android:layout_marginTop="530dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/drink"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:layout_width="71dp"
+            android:layout_height="18dp"
+            android:id="@+id/tvDrink"
+            android:text="Drinks"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="586dp"
+            android:layout_marginStart="178dp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:id="@+id/ivCookies"
+            android:background="@drawable/background_white_gray"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="510dp"
+            android:layout_marginStart="246dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+
+        <Button
+            android:id="@+id/btnCookies"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="266dp"
+            android:layout_marginTop="530dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/cookie"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:layout_width="71dp"
+            android:layout_height="18dp"
+            android:id="@+id/tvCookies"
+            android:text="Cookies"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="586dp"
+            android:layout_marginStart="255dp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:id="@+id/ivCocktail"
+            android:background="@drawable/background_white_gray"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="510dp"
+            android:layout_marginStart="325dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/btnCocktail"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="346dp"
+            android:layout_marginTop="530dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/delivery"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+
+        <TextView
+            android:layout_width="71dp"
+            android:layout_height="18dp"
+            android:id="@+id/tvCocktail"
+            android:text="Cocktail"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="586dp"
+            android:layout_marginStart="335dp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+        <TextView
+            android:layout_width="244dp"
+            android:layout_height="28dp"
+            android:id="@+id/tvNearby"
+            android:text="Nearby moods around you"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="627dp"
+            android:layout_marginStart="16dp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="83dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="323dp"
+            android:text="view all"
+            android:textSize="12sp"
+            android:textColor="@drawable/background"
+            android:layout_marginTop="629dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/ivMac"
+            android:background="@drawable/drink"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="710dp"
+            android:layout_marginStart="166dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    
+
+</ScrollView>

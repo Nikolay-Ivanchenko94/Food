@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".logins.SignUpFragment">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+
+     <Button
+         android:id="@+id/btnBack"
+         android:layout_width="38dp"
+         android:layout_height="38dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginTop="40dp"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         android:background="@drawable/arrowleft"
+         android:contentDescription="Back"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.0"
+         tools:ignore="HardcodedText,MissingConstraints" />
+
+
+
+     <Button
+         android:layout_width="69dp"
+         android:layout_height="48dp"
+         android:id="@+id/btnSkip"
+         android:text="Skip"
+         android:textColor="@color/black"
+         android:background="?android:attr/selectableItemBackground"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="30dp"
+         android:layout_marginStart="340dp"
+         tools:ignore="HardcodedText,MissingConstraints" />
+
+
+
+     <TextView
+         android:layout_width="93dp"
+         android:layout_height="48dp"
+         android:id="@+id/tvSignUp"
+         android:text="Sign Up"
+         android:textSize="24sp"
+         android:textColor="@drawable/background"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="156dp"
+         android:layout_marginStart="170dp"
+         tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+     <ImageView
+         android:layout_width="396dp"
+         android:layout_height="60dp"
+         android:id="@+id/ivName"
+         android:background="@drawable/background_gray"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="261dp"
+         android:layout_marginStart="10dp"
+         tools:ignore="ContentDescription,MissingConstraints" />
+
+
+
+    
+     <ImageView
+         android:layout_width="24dp"
+         android:layout_height="24dp"
+         android:id="@+id/ivUser"
+         android:background="@drawable/user"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="281dp"
+         android:layout_marginStart="30dp"
+         tools:ignore="ContentDescription" />
+     
+     
+     <EditText
+         android:layout_width="129dp"
+         android:layout_height="48dp"
+         android:id="@+id/evName"
+         android:hint="Name"
+         android:background="?android:attr/selectableItemBackground"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="271dp"
+         android:layout_marginStart="70dp"
+         tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
+
+
+
+     <ImageView
+         android:layout_width="396dp"
+         android:layout_height="60dp"
+         android:id="@+id/ivEmail"
+         android:background="@drawable/background_gray"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="341dp"
+         android:layout_marginStart="10dp"
+         tools:ignore="ContentDescription,MissingConstraints" />
+
+
+     <ImageView
+         android:layout_width="24dp"
+         android:layout_height="24dp"
+         android:id="@+id/ivSms"
+         android:background="@drawable/sms"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="361dp"
+         android:layout_marginStart="30dp"
+         tools:ignore="ContentDescription" />
+
+
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:id="@+id/evEmail"
+         android:hint="E-mail"
+         android:background="?android:attr/selectableItemBackground"
+         android:layout_marginEnd="3dp"
+         android:inputType="textEmailAddress"
+         android:transitionName="logo_text"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="351dp"
+         android:layout_marginStart="70dp"
+         tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
+
+
+
+     <ImageView
+         android:layout_width="396dp"
+         android:layout_height="60dp"
+         android:id="@+id/ivMobile"
+         android:background="@drawable/background_gray"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="421dp"
+         android:layout_marginStart="10dp"
+         tools:ignore="ContentDescription,MissingConstraints" />
+
+
+     <ImageView
+         android:layout_width="24dp"
+         android:layout_height="24dp"
+         android:id="@+id/ivCall"
+         android:background="@drawable/call"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="441dp"
+         android:layout_marginStart="30dp"
+         tools:ignore="ContentDescription" />
+
+
+     <EditText
+         android:layout_width="199dp"
+         android:layout_height="48dp"
+         android:id="@+id/evCall"
+         android:hint="Mobile Phone"
+         android:background="?android:attr/selectableItemBackground"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="431dp"
+         android:layout_marginStart="70dp"
+         tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
+
+
+     <ImageView
+         android:layout_width="396dp"
+         android:layout_height="60dp"
+         android:id="@+id/ivPsw"
+         android:background="@drawable/background_gray"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="501dp"
+         android:layout_marginStart="10dp"
+         tools:ignore="ContentDescription,MissingConstraints" />
+
+
+
+     <ImageView
+         android:layout_width="24dp"
+         android:layout_height="24dp"
+         android:id="@+id/ivLock"
+         android:background="@drawable/lock"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="521dp"
+         android:layout_marginStart="30dp"
+         tools:ignore="ContentDescription" />
+
+
+
+     <EditText
+         android:layout_width="199dp"
+         android:layout_height="48dp"
+         android:id="@+id/evLock"
+         android:hint="Password"
+         android:background="?android:attr/selectableItemBackground"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="511dp"
+         android:layout_marginStart="70dp"
+         tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
+
+
+
+
+     
+     
+     <Button
+         android:layout_width="153dp"
+         android:layout_height="48dp"
+         android:id="@+id/btnForgot"
+         android:background="?android:attr/selectableItemBackground"
+         android:text="Forgot Password"
+         android:textColor="@drawable/background"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="564dp"
+         android:layout_marginStart="250dp"
+         tools:ignore="HardcodedText,MissingConstraints" />
+
+
+     <Button
+         android:layout_width="396dp"
+         android:layout_height="60dp"
+         android:id="@+id/btnSignUp"
+         android:text="Sign Up"
+         android:textColor="@color/white"
+         android:background="@drawable/background"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="631dp"
+         android:layout_marginStart="10dp"
+         tools:ignore="HardcodedText" />
+
+
+     <CheckBox
+         android:id="@+id/checkBox"
+         android:layout_width="25dp"
+         android:layout_height="20dp"
+         android:layout_marginStart="10dp"
+         android:layout_marginTop="710dp"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.0"
+         tools:ignore="TouchTargetSizeCheck" />
+     
+     
+     <TextView
+         android:layout_width="250dp"
+         android:layout_height="30dp"
+         android:id="@+id/tvAgree"
+         android:textColor="@color/black"
+         android:textSize="14sp"
+         android:text="I agree to the                              and "
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="710dp"
+         android:layout_marginStart="50dp"
+         tools:ignore="HardcodedText,MissingConstraints" />
+
+
+     <Button
+         android:id="@+id/btnPrivacy"
+         android:layout_width="300dp"
+         android:layout_height="48dp"
+         android:layout_marginStart="85dp"
+         android:layout_marginTop="698dp"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         android:background="?android:attr/selectableItemBackground"
+         android:text="   terms conditions               privacy policy "
+         android:textColor="@drawable/background"
+         android:textSize="10sp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.0"
+         tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
+
+
+<TextView
+    android:layout_width="105dp"
+    android:layout_height="21dp"
+    android:id="@+id/tvSignUpWith"
+    android:text="Or Sign Up with"
+    android:textColor="@drawable/background"
+    android:textSize="14dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginBottom="3dp"
+    app:layout_constraintVertical_bias="0.0"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="740dp"
+    android:layout_marginStart="150dp"
+    tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+     
+     
+     <ImageView
+         android:layout_width="46dp"
+         android:layout_height="46dp"
+         android:id="@+id/ivGoogle"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="780dp"
+         android:layout_marginStart="130dp"
+         android:background="@drawable/background_white_gray"
+         tools:ignore="ContentDescription" />
+
+
+
+     <com.google.android.gms.common.SignInButton
+         android:layout_width="26dp"
+         android:layout_height="26dp"
+         android:id="@+id/btnGoogle"
+         android:layout_marginStart="140dp"
+         android:layout_marginTop="790dp"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         android:background="@drawable/google"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.0"
+         tools:ignore="SpeakableTextPresentCheck"/>
+
+
+
+
+     <ImageView
+         android:layout_width="46dp"
+         android:layout_height="46dp"
+         android:id="@+id/ivFacebook"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="780dp"
+         android:layout_marginStart="210dp"
+         android:background="@drawable/background_white_gray"
+         tools:ignore="ContentDescription" />
+
+
+
+     <com.facebook.login.widget.LoginButton
+         android:layout_width="26dp"
+         android:layout_height="26dp"
+         android:id="@+id/btnLogin"
+         android:layout_marginStart="220dp"
+         android:layout_marginTop="790dp"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         android:background="@drawable/facebook"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.0"
+         tools:ignore="SpeakableTextPresentCheck"/>
+
+
+     <TextView
+         android:layout_width="210dp"
+         android:layout_height="26dp"
+         android:id="@+id/tvAccount"
+         android:text="Already have an account?"
+         android:textSize="14sp"
+         android:textColor="@color/black"
+         android:layout_marginStart="110dp"
+         android:layout_marginTop="840dp"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.0"
+         tools:ignore="HardcodedText,MissingConstraints" />
+
+<Button
+    android:layout_width="210dp"
+    android:layout_height="26dp"
+    android:id="@+id/btnSignInOr"
+    android:background="?android:attr/selectableItemBackground"
+    android:text="Sign In"
+    android:textColor="@drawable/background"
+    android:layout_marginStart="195dp"
+    android:layout_marginTop="837dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginBottom="3dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    tools:ignore="HardcodedText" />
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".logins.ResetFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <Button
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:id="@+id/btnBack"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/arrowleft"
+            android:contentDescription="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <Button
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:id="@+id/btnSkip"
+            android:text="Skip"
+            android:textColor="@color/black"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="340dp"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="48dp"
+            android:id="@+id/tvReset"
+            android:text="Reset Password"
+            android:textSize="24sp"
+            android:textColor="@drawable/background"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="156dp"
+            android:layout_marginStart="120dp"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+        <TextView
+            android:layout_width="396dp"
+            android:layout_height="46dp"
+            android:id="@+id/tvCharacters"
+            android:text="At last 9 characters with uppercase and lowercase letters"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="210dp"
+            android:layout_marginStart="13dp"
+            tools:ignore="HardcodedText" />
+
+
+
+        <ImageView
+            android:layout_width="396dp"
+            android:layout_height="60dp"
+            android:id="@+id/ivNewPsw"
+            android:background="@drawable/background_gray"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="426dp"
+            android:layout_marginStart="10dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/evNewPSw"
+            android:hint="New Password"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="435dp"
+            android:layout_marginStart="40dp"
+            tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
+
+        <CheckBox
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/btnNewPsw"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="450dp"
+            android:layout_marginStart="350dp"/>
+
+        <ImageView
+            android:layout_width="396dp"
+            android:layout_height="60dp"
+            android:id="@+id/ivConfirm"
+            android:background="@drawable/background_gray"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="502dp"
+            android:layout_marginStart="10dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/evConfirm"
+            android:hint="Confirm Password"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="510dp"
+            android:layout_marginStart="40dp"
+            tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
+
+
+        <CheckBox
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/btnConfirm"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="525dp"
+            android:layout_marginStart="350dp"/>
+
+        <Button
+            android:layout_width="396dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnVerify"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:background="@drawable/background"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="588dp"
+            android:layout_marginStart="10dp"
+            tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
