@@ -87,6 +87,6 @@ public class FoodFragment extends Fragment {
        binding.tvGramercy.setText(String.valueOf(foodDB.getName()));
        binding.tvKie.setText(String.valueOf(foodDB.getName()));
        binding.tvPrice.setText(String.valueOf(foodDB.getPrice()));
-       binding.tvPrice.setText(String.valueOf(foodDB.getPrice()));
+
     }
 }
