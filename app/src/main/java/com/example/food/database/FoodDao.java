@@ -1,5 +1,4 @@
-package com.example.food.databse;
-
+package com.example.food.database;
 
 import androidx.room.Dao;
 import androidx.room.Insert;
@@ -9,11 +8,11 @@ import java.util.List;
 
 @Dao
 public interface FoodDao {
+
     @Insert
-    public void insertFoodDBList(List<FoodDB> foodDBS);
+    public void insertFoodDBList(List<FoodDB> foodDB);
 
     @Query("SELECT * FROM FoodDB")
-    public List<FoodDB> getFoodDBS();
+    public List<FoodDB> getFoodDBList();
+
 }
-
-

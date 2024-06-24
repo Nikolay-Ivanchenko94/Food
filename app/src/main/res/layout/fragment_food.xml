@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homescreen.FoodFragment">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+      <Button
+          android:id="@+id/btnLeft"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="64dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="@drawable/arrowleft"
+          android:contentDescription="Back"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+      <TextView
+          android:id="@+id/tvFood"
+          android:layout_width="63dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="180dp"
+          android:layout_marginTop="59dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="Food"
+          android:textColor="@drawable/background"
+          android:textSize="24sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck" />
+
+      
+      <ImageView
+          android:layout_width="105dp"
+          android:layout_height="168dp"
+          android:id="@+id/ivGramercy"
+          android:background="@drawable/background_white"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="114dp"
+          android:layout_marginStart="16dp"
+          tools:ignore="ContentDescription,MissingConstraints" />
+
+      <Button
+          android:id="@+id/btnLikeGromercy"
+          android:layout_width="18dp"
+          android:layout_height="18dp"
+          android:layout_marginStart="96dp"
+          android:layout_marginTop="124dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="@drawable/like"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+      <Button
+          android:id="@+id/btnGramercy"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginStart="48dp"
+          android:layout_marginTop="162dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:contentDescription="Back"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
+
+      <TextView
+          android:id="@+id/tvPrice"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="50dp"
+          android:layout_marginTop="200dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="10$"
+          android:textColor="@drawable/background"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,TextSizeCheck,TextContrastCheck" />
+
+
+      <TextView
+          android:id="@+id/tvGramercy"
+          android:layout_width="78dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="30dp"
+          android:layout_marginTop="218dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="Gramercy"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,TextSizeCheck" />
+
+
+
+     <ImageView
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+         android:id="@+id/ivCart"
+         android:background="@drawable/baseline_shopping_cart_24"
+         android:layout_marginEnd="3dp"
+         android:layout_marginBottom="3dp"
+         app:layout_constraintVertical_bias="0.0"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginTop="245dp"
+         android:layout_marginStart="25dp"
+         tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage" />
+
+
+      <Button
+          android:id="@+id/btnAddGramercy"
+          android:layout_width="76dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="45dp"
+          android:layout_marginTop="240dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="?android:attr/selectableItemBackground"
+          android:text="Add to cart"
+          android:textSize="10sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,SmallSp,TextSizeCheck,TouchTargetSizeCheck" />
+
+
+      <ImageView
+          android:layout_width="105dp"
+          android:layout_height="168dp"
+          android:id="@+id/ivManhatta"
+          android:background="@drawable/background_white"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="114dp"
+          android:layout_marginStart="148dp"
+          tools:ignore="ContentDescription,MissingConstraints" />
+
+
+      <Button
+          android:id="@+id/btnLikeManhatta"
+          android:layout_width="18dp"
+          android:layout_height="18dp"
+          android:layout_marginStart="225dp"
+          android:layout_marginTop="124dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="@drawable/like"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+      <Button
+          android:id="@+id/btnManhatta"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginStart="183dp"
+          android:layout_marginTop="162dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:contentDescription="Back"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
+
+      <TextView
+          android:id="@+id/tvPriceMah"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="185dp"
+          android:layout_marginTop="200dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="20$"
+          android:textColor="@drawable/background"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,TextContrastCheck" />
+
+      <TextView
+          android:id="@+id/tvManhatta"
+          android:layout_width="78dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="165dp"
+          android:layout_marginTop="218dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="Manhatta"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck" />
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:id="@+id/ivCartManhatta"
+          android:background="@drawable/baseline_shopping_cart_24"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="245dp"
+          android:layout_marginStart="155dp"
+          tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage" />
+
+
+      <Button
+          android:id="@+id/btnAddManhatta"
+          android:layout_width="76dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="175dp"
+          android:layout_marginTop="240dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="?android:attr/selectableItemBackground"
+          android:text="Add to cart"
+          android:textSize="10sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,SmallSp,TextSizeCheck,TextSizeCheck,TouchTargetSizeCheck" />
+
+      <ImageView
+          android:layout_width="105dp"
+          android:layout_height="168dp"
+          android:id="@+id/ivRubirosa"
+          android:background="@drawable/background_white"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="114dp"
+          android:layout_marginStart="280dp"
+          tools:ignore="ContentDescription,MissingConstraints" />
+
+      <Button
+          android:id="@+id/btnLikeRubirosa"
+          android:layout_width="18dp"
+          android:layout_height="18dp"
+          android:layout_marginStart="360dp"
+          android:layout_marginTop="124dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="@drawable/like"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+      <Button
+          android:id="@+id/btnRubirosa"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginStart="313dp"
+          android:layout_marginTop="162dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:contentDescription="Back"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
+
+
+      <TextView
+          android:id="@+id/tvPriceRub"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="315dp"
+          android:layout_marginTop="200dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="20$"
+          android:textColor="@drawable/background"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextContrastCheck,TextSizeCheck" />
+
+      <TextView
+          android:id="@+id/tvRubirosa"
+          android:layout_width="78dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="295dp"
+          android:layout_marginTop="218dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="Rubirosa"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck" />
+
+
+
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:id="@+id/ivCartRub"
+          android:background="@drawable/baseline_shopping_cart_24"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="245dp"
+          android:layout_marginStart="285dp"
+          tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage" />
+
+
+      <Button
+          android:id="@+id/btnAddRubirosa"
+          android:layout_width="76dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="305dp"
+          android:layout_marginTop="240dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="?android:attr/selectableItemBackground"
+          android:text="Add to cart"
+          android:textSize="10sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,SmallSp,TextSizeCheck,TouchTargetSizeCheck" />
+
+
+
+      <ImageView
+          android:layout_width="105dp"
+          android:layout_height="168dp"
+          android:id="@+id/ivDonAngie"
+          android:background="@drawable/background_white"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="300dp"
+          android:layout_marginStart="16dp"
+          tools:ignore="ContentDescription,MissingConstraints" />
+
+
+      <Button
+          android:id="@+id/btnLikeDon"
+          android:layout_width="18dp"
+          android:layout_height="18dp"
+          android:layout_marginStart="96dp"
+          android:layout_marginTop="308dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="@drawable/like"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+      <Button
+          android:id="@+id/btnDon"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginStart="48dp"
+          android:layout_marginTop="352dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:contentDescription="Back"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
+
+
+      <TextView
+          android:id="@+id/tvPriceDon"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="50dp"
+          android:layout_marginTop="390dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="30$"
+          android:textColor="@drawable/background"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,TextContrastCheck" />
+
+
+      <TextView
+          android:id="@+id/tvDonAngie"
+          android:layout_width="98dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="28dp"
+          android:layout_marginTop="408dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="Don Angie"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck" />
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:id="@+id/ivCartDon"
+          android:background="@drawable/baseline_shopping_cart_24"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="435dp"
+          android:layout_marginStart="25dp"
+          tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage" />
+
+
+      <Button
+          android:id="@+id/btnDonAngine"
+          android:layout_width="76dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="45dp"
+          android:layout_marginTop="430dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="?android:attr/selectableItemBackground"
+          android:text="Add to cart"
+          android:textSize="10sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,SmallSp,TextSizeCheck,TouchTargetSizeCheck" />
+
+
+
+      <ImageView
+          android:layout_width="105dp"
+          android:layout_height="168dp"
+          android:id="@+id/ivLeCoucou"
+          android:background="@drawable/background_white"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="300dp"
+          android:layout_marginStart="150dp"
+          tools:ignore="ContentDescription,MissingConstraints" />
+
+
+
+      <Button
+          android:id="@+id/btnLikeLa"
+          android:layout_width="18dp"
+          android:layout_height="18dp"
+          android:layout_marginStart="230dp"
+          android:layout_marginTop="308dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="@drawable/like"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+      <Button
+          android:id="@+id/btnLa"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginStart="188dp"
+          android:layout_marginTop="352dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:contentDescription="Back"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
+
+
+      <TextView
+          android:id="@+id/tvPriceLe"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="190dp"
+          android:layout_marginTop="390dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="12$"
+          android:textColor="@drawable/background"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,TextContrastCheck" />
+
+
+
+      <TextView
+          android:id="@+id/tvLeCoucou"
+          android:layout_width="98dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="165dp"
+          android:layout_marginTop="408dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="Le Coucou"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck" />
+
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:id="@+id/ivCartLe"
+          android:background="@drawable/baseline_shopping_cart_24"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="435dp"
+          android:layout_marginStart="160dp"
+          tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage" />
+
+
+      <Button
+          android:id="@+id/btnLeCoucou"
+          android:layout_width="76dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="180dp"
+          android:layout_marginTop="430dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="?android:attr/selectableItemBackground"
+          android:text="Add to cart"
+          android:textSize="10sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,SmallSp,TextSizeCheck,TouchTargetSizeCheck" />
+
+
+      <ImageView
+          android:layout_width="105dp"
+          android:layout_height="168dp"
+          android:id="@+id/ivLeDaniel"
+          android:background="@drawable/background_white"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="300dp"
+          android:layout_marginStart="285dp"
+          tools:ignore="ContentDescription,MissingConstraints" />
+
+
+      <Button
+          android:id="@+id/btnLikeDa"
+          android:layout_width="18dp"
+          android:layout_height="18dp"
+          android:layout_marginStart="365dp"
+          android:layout_marginTop="308dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="@drawable/like"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+      <Button
+          android:id="@+id/btnDa"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_marginStart="325dp"
+          android:layout_marginTop="352dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:contentDescription="Back"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
+
+      <TextView
+          android:id="@+id/tvPriceDa"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="330dp"
+          android:layout_marginTop="390dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="22$"
+          android:textColor="@drawable/background"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,TextContrastCheck" />
+
+
+
+      <TextView
+          android:id="@+id/tvDaniel"
+          android:layout_width="98dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="315dp"
+          android:layout_marginTop="408dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:text="Daniel"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck" />
+
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:id="@+id/ivCartDa"
+          android:background="@drawable/baseline_shopping_cart_24"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="435dp"
+          android:layout_marginStart="295dp"
+          tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpUsage" />
+
+
+      <Button
+          android:id="@+id/btnDaniel"
+          android:layout_width="76dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="315dp"
+          android:layout_marginTop="430dp"
+          android:layout_marginEnd="3dp"
+          android:layout_marginBottom="3dp"
+          android:background="?android:attr/selectableItemBackground"
+          android:text="Add to cart"
+          android:textSize="10sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="HardcodedText,SmallSp,TextSizeCheck,TouchTargetSizeCheck" />
+
+
+      <TextView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:id="@+id/tvKie"
+          android:text="OOOO"/>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
